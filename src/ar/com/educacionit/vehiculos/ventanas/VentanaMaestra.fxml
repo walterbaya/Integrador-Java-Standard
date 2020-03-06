@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="300.0" prefWidth="284.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ar.com.educacionit.vehiculos.ventanas.VentanaMaestraController">
+   <children>
+      <MenuBar layoutY="-1.0" prefHeight="25.0" prefWidth="300.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Abrir Ventana">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#AbrirVentanaAutos" text="Autos" />
+                  <MenuItem mnemonicParsing="false" onAction="#AbrirVentanaCompradores" text="Compradores" />
+                  <MenuItem mnemonicParsing="false" onAction="#AbrirVentanaVendedores" text="Vendedores" />
+                  <MenuItem mnemonicParsing="false" onAction="#AbrirVentanaConfiguracion" text="Configuracion" />
+                  <MenuItem mnemonicParsing="false" text="Salir" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Ayuda on-line" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
