@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane id="AnchorPane" prefHeight="248.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ar.com.educacionit.vehiculos.ventanas.CompradoresVentanaController">
+<AnchorPane id="AnchorPane" prefHeight="248.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ar.com.educacionit.vehiculos.controladores.CompradoresVentanaController">
     <children>
         <SplitPane dividerPositions="0.29797979797979796" layoutX="-3.0" prefHeight="254.0" prefWidth="600.0">
             <items>
@@ -57,7 +57,7 @@
                         <AnchorPane layoutX="9.0" layoutY="345.0" />
                         <HBox layoutX="9.0" layoutY="218.0" prefHeight="40.0" prefWidth="200.0">
                             <children>
-                                <Button mnemonicParsing="false" onAction="#abrirAutosEdicion" prefHeight="25.0" prefWidth="66.7" text="Nuevo" />
+                                <Button mnemonicParsing="false" onAction="#abrirCompradoresEdicion" prefHeight="25.0" prefWidth="66.7" text="Nuevo" />
                                 <Button fx:id="editar" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.7" text="Editar" />
                                 <Button fx:id="borrar" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.7" text="Borrar" />
                             </children>

@@ -1,4 +1,4 @@
-package ar.com.educacionit.vehiculos.ventanas;
+package ar.com.educacionit.vehiculos.controladores;
 
 import java.net.URL;
 import java.util.ResourceBundle;

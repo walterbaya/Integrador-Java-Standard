@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane id="AnchorPane" prefHeight="295.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ar.com.educacionit.vehiculos.ventanas.ConfiguracionVentanaController">
+<AnchorPane id="AnchorPane" prefHeight="295.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ar.com.educacionit.vehiculos.controladores.ConfiguracionVentanaController">
    <children>
       <GridPane prefHeight="253.0" prefWidth="408.0">
         <columnConstraints>

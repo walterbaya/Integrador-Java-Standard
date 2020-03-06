@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane id="AnchorPane" prefHeight="334.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ar.com.educacionit.vehiculos.ventanas.CompradoresEdicionController">
+<AnchorPane id="AnchorPane" prefHeight="334.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ar.com.educacionit.vehiculos.controladores.CompradoresEdicionController">
    <children>
       <GridPane layoutX="20.0" layoutY="10.0" prefHeight="256.0" prefWidth="580.0">
         <columnConstraints>
