@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -7,6 +9,7 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -14,66 +17,66 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ar.com.educacionit.vehiculos.controladores.AutosVentanaController">
-   <children>
-      <SplitPane dividerPositions="0.29797979797979796" layoutX="-3.0" prefHeight="400.0" prefWidth="600.0">
-        <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="200.0">
-               <children>
-                  <Pane layoutX="2.0" prefHeight="400.0" prefWidth="175.0">
-                     <children>
-                        <TableView layoutX="-2.0" prefHeight="398.0" prefWidth="175.0">
-                          <columns>
-                            <TableColumn prefWidth="87.5" text="Marca" />
-                            <TableColumn prefWidth="87.5" text="Modelo" />
-                          </columns>
-                        </TableView>
-                     </children>
-                  </Pane>
-               </children>
-            </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-               <children>
-                  <GridPane layoutX="9.0" prefHeight="200.0" prefWidth="400.0">
-                    <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                    </columnConstraints>
-                    <rowConstraints>
-                        <RowConstraints maxHeight="105.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="105.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="105.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="105.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
-                        <RowConstraints maxHeight="108.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
-                      <RowConstraints maxHeight="149.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
-                      <RowConstraints maxHeight="148.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
-                      <RowConstraints maxHeight="116.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
-                    </rowConstraints>
-                     <children>
-                        <Label prefHeight="40.0" prefWidth="400.0" text="Datos del Auto" />
-                        <Label prefHeight="40.0" prefWidth="400.0" text="Alto:" GridPane.rowIndex="1" />
-                        <Label prefHeight="40.0" prefWidth="400.0" text="Ancho:" GridPane.rowIndex="2" />
-                        <Label prefHeight="40.0" prefWidth="400.0" text="Largo:" GridPane.rowIndex="3" />
-                        <Label prefHeight="40.0" prefWidth="400.0" text="Modelo:" GridPane.rowIndex="4" />
-                        <Label prefHeight="40.0" prefWidth="400.0" text="Marca:" GridPane.rowIndex="5" />
-                        <Label prefHeight="40.0" prefWidth="400.0" text="Color:" GridPane.rowIndex="6" />
-                        <Label prefHeight="40.0" prefWidth="400.0" text="Precio:" GridPane.rowIndex="7" />
-                     </children>
-                  </GridPane>
-                  <TextArea layoutX="9.0" layoutY="225.0" prefHeight="120.0" prefWidth="394.0" />
-                  <Button fx:id="cerrar" layoutX="336.0" layoutY="360.0" mnemonicParsing="false" onAction="#cerrarVentana" prefHeight="25.0" prefWidth="66.7" text="Cerrar" />
-                  <AnchorPane layoutX="9.0" layoutY="345.0" />
-                  <HBox layoutX="10.0" layoutY="360.0" prefHeight="40.0" prefWidth="200.0">
-                     <children>
-                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="66.7" text="Nuevo" />
-                        <Button fx:id="editar" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.7" text="Editar" />
-                        <Button fx:id="borrar" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.7" text="Borrar" />
-                     </children>
-                  </HBox>
-               </children>
-            </AnchorPane>
-        </items>
-      </SplitPane>
-      <Accordion />
-   </children>
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="ar.com.educacionit.vehiculos.controladores.AutosVentanaController">
+  <children>
+    <SplitPane dividerPositions="0.2976588628762542" layoutX="-3.0" prefHeight="400.0" prefWidth="600.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="200.0">
+          <children>
+            <Pane layoutX="2.0" prefHeight="400.0" prefWidth="175.0">
+              <children>
+                <TableView layoutX="-2.0" prefHeight="398.0" prefWidth="175.0">
+                  <columns>
+                    <TableColumn prefWidth="87.5" text="Marca" />
+                    <TableColumn prefWidth="87.5" text="Modelo" />
+                  </columns>
+                </TableView>
+              </children>
+            </Pane>
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <children>
+            <GridPane layoutX="9.0" prefHeight="200.0" prefWidth="400.0">
+              <children>
+                <Label prefHeight="40.0" prefWidth="400.0" text="Datos del Auto" />
+                <Label prefHeight="40.0" prefWidth="400.0" text="Alto:" GridPane.rowIndex="1" />
+                <Label prefHeight="40.0" prefWidth="400.0" text="Ancho:" GridPane.rowIndex="2" />
+                <Label prefHeight="40.0" prefWidth="400.0" text="Largo:" GridPane.rowIndex="3" />
+                <Label prefHeight="40.0" prefWidth="400.0" text="Modelo:" GridPane.rowIndex="4" />
+                <Label prefHeight="40.0" prefWidth="400.0" text="Marca:" GridPane.rowIndex="5" />
+                <Label prefHeight="40.0" prefWidth="400.0" text="Color:" GridPane.rowIndex="6" />
+                <Label prefHeight="40.0" prefWidth="400.0" text="Precio:" GridPane.rowIndex="7" />
+              </children>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="105.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="105.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="105.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="105.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="108.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="149.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="148.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="116.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+            </GridPane>
+            <TextArea layoutX="9.0" layoutY="225.0" prefHeight="120.0" prefWidth="394.0" />
+            <Button fx:id="cerrar" layoutX="336.0" layoutY="360.0" mnemonicParsing="false" onAction="#cerrarVentana" prefHeight="25.0" prefWidth="66.7" text="Cerrar" />
+            <AnchorPane layoutX="9.0" layoutY="345.0" />
+            <HBox layoutX="10.0" layoutY="360.0" prefHeight="40.0" prefWidth="200.0">
+              <children>
+                <Button fx:id="nuevo" mnemonicParsing="false" onAction="#abrirVentanaEdicion" prefHeight="25.0" prefWidth="66.7" text="Nuevo" />
+                <Button fx:id="editar" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.7" text="Editar" />
+                <Button fx:id="borrar" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.7" text="Borrar" />
+              </children>
+            </HBox>
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+    <Accordion />
+  </children>
 </AnchorPane>

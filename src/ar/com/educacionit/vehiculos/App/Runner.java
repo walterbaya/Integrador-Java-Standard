@@ -90,6 +90,7 @@ public class Runner extends Application {
         VendedoresVentanaController controller = cargador.getController();
         controller.setRunner(this);
 
+        escenarioVendedores.setTitle("Vendedores");
         Scene escena = new Scene(dibujosVentana);
         escenarioVendedores.setScene(escena);
         escenarioVendedores.show();
