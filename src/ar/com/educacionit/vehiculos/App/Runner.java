@@ -27,6 +27,12 @@ public class Runner extends Application {
         iniciarVentanaMaestra();
     }
 
+    /**
+     *Inicia la ventana maestra 
+     * 
+     * 
+     * 
+     **/
     private void iniciarVentanaMaestra() throws IOException {
         //CARGA DEL DISEÑO
         /**

@@ -25,12 +25,12 @@ public class AutosVentanaController  implements Initializable  {
         this.runner=runner;
     }
     @FXML
-    private void cerrarVentana() {
+    public void cerrarVentana() {
        Stage escenario = (Stage)cerrar.getScene().getWindow();
        escenario.close();
     }
     @FXML
-    private void abrirVentanaEdicion() throws IOException{
+    public void abrirVentanaEdicion() throws IOException{
         this.runner.abrirVentanaAutosEdicion();
     }
   

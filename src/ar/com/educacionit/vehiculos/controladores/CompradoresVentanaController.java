@@ -27,12 +27,12 @@ public class CompradoresVentanaController implements Initializable {
     }
     
     @FXML
-    private void cerrarVentana() {
+    public void cerrarVentana() {
 
     }
 
     @FXML
-    private void abrirCompradoresEdicion() throws IOException {
+    public void abrirCompradoresEdicion() throws IOException {
         this.runner.abrirVentanaCompradoresEdicion();
     }
 
