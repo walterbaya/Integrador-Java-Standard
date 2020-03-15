@@ -7,12 +7,11 @@ import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 public class VendedoresVentanaController implements Initializable {
     
     private Runner runner;
-    @FXML
-    private Button nuevo;
     @FXML
     private Button cerrar;
     @FXML
@@ -26,7 +25,9 @@ public class VendedoresVentanaController implements Initializable {
     
     @FXML
     private void cerrarVentana() {
-        
+        Stage escenario = (Stage)cerrar.getScene().getWindow();
+        escenario.close();
+        runner.setCapa1Abierta(false);
     }
     
     @FXML

@@ -13,8 +13,6 @@ public class AutosVentanaController  implements Initializable  {
       
     private Runner runner;
     @FXML
-    private Button nuevo;
-    @FXML
     private Button cerrar;
     @FXML
     private Button editar;
@@ -28,6 +26,7 @@ public class AutosVentanaController  implements Initializable  {
     public void cerrarVentana() {
        Stage escenario = (Stage)cerrar.getScene().getWindow();
        escenario.close();
+       runner.setCapa1Abierta(false);
     }
     @FXML
     public void abrirVentanaEdicion() throws IOException{

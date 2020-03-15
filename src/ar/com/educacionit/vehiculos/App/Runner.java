@@ -1,11 +1,14 @@
 package ar.com.educacionit.vehiculos.App;
 
+import ar.com.educacionit.vehiculos.controladores.AutosEdicionVentanaController;
 import ar.com.educacionit.vehiculos.controladores.AutosVentanaController;
+import ar.com.educacionit.vehiculos.controladores.CompradoresEdicionController;
 import ar.com.educacionit.vehiculos.controladores.CompradoresVentanaController;
+import ar.com.educacionit.vehiculos.controladores.ConfiguracionVentanaController;
+import ar.com.educacionit.vehiculos.controladores.VendedoresEdicionController;
 import ar.com.educacionit.vehiculos.controladores.VendedoresVentanaController;
 import ar.com.educacionit.vehiculos.controladores.VentanaMaestraController;
 import java.io.IOException;
-import java.net.URL;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -14,7 +17,9 @@ import javafx.stage.Stage;
 
 public class Runner extends Application {
 
-    private Stage escenarioPrincipal = new Stage() ;
+    private boolean capa1Abierta = false;
+    private boolean capa2Abierta = false;
+    private Stage escenarioPrincipal = new Stage();
     private Stage escenarioCompradores = new Stage();
     private Stage escenarioAutos = new Stage();
     private Stage escenarioVendedores = new Stage();
@@ -28,11 +33,12 @@ public class Runner extends Application {
     }
 
     /**
-     *Inicia la ventana maestra 
-     * 
-     * 
-     * 
-     **/
+     * Inicia la ventana maestra
+     *
+     *
+     *
+     *
+     */
     private void iniciarVentanaMaestra() throws IOException {
         //CARGA DEL DISEÑO
         /**
@@ -60,105 +66,152 @@ public class Runner extends Application {
 
     //COMPRADORES
     public void abrirVentanaCompradores() throws IOException {
-        FXMLLoader cargador = new FXMLLoader();
-        cargador.setLocation(getClass().getResource("/ar/com/educacionit/vehiculos/ventanas/CompradoresVentana.fxml"));
-        AnchorPane dibujosVentana = (AnchorPane) cargador.load();
+        if (!capa1Abierta) {
+            FXMLLoader cargador = new FXMLLoader();
+            cargador.setLocation(getClass().getResource("/ar/com/educacionit/vehiculos/ventanas/CompradoresVentana.fxml"));
+            AnchorPane dibujosVentana = (AnchorPane) cargador.load();
 
-        CompradoresVentanaController controller = cargador.getController();
-        controller.setRunner(this);
-        
-        escenarioCompradores.setTitle("Ventana Compradores");
-        Scene escena = new Scene(dibujosVentana);
-        escenarioCompradores.setScene(escena);
-        escenarioCompradores.show();
+            CompradoresVentanaController controller = cargador.getController();
+            controller.setRunner(this);
+
+            escenarioCompradores.setTitle("Ventana Compradores");
+            Scene escena = new Scene(dibujosVentana);
+            escenarioCompradores.setScene(escena);
+            escenarioCompradores.show();
+            capa1Abierta = true;
+        }
     }
 
     public void abrirVentanaCompradoresEdicion() throws IOException {
-        FXMLLoader cargador = new FXMLLoader();
-        cargador.setLocation(getClass().getResource("/ar/com/educacionit/vehiculos/ventanas/CompradoresEdicion.fxml"));
-        AnchorPane dibujosVentana = (AnchorPane) cargador.load();
+        if (!capa2Abierta) {
+            FXMLLoader cargador = new FXMLLoader();
+            cargador.setLocation(getClass().getResource("/ar/com/educacionit/vehiculos/ventanas/CompradoresEdicion.fxml"));
+            AnchorPane dibujosVentana = (AnchorPane) cargador.load();
+            CompradoresEdicionController controller = cargador.getController();
+            controller.setRunner(this);
+            
 
-        Stage escenario = new Stage();
+            Stage escenario = new Stage();
 
-        escenario.initOwner(escenarioCompradores);
-        escenario.setTitle("Ventana compradores Edicion");
-        Scene escena = new Scene(dibujosVentana);
-        escenario.setScene(escena);
-        escenario.show();
+            escenario.initOwner(escenarioCompradores);
+            escenario.setTitle("Ventana compradores Edicion");
+            Scene escena = new Scene(dibujosVentana);
+            escenario.setScene(escena);
+            escenario.show();
+            capa2Abierta = true;
+        }
     }
 
     //VENDEDORES
     public void abrirVentanaVendedores() throws IOException {
-        FXMLLoader cargador = new FXMLLoader();
-        cargador.setLocation(getClass().getResource("/ar/com/educacionit/vehiculos/ventanas/VendedoresVentana.fxml"));
-        AnchorPane dibujosVentana = (AnchorPane) cargador.load();
-        
-        VendedoresVentanaController controller = cargador.getController();
-        controller.setRunner(this);
+        if (!capa1Abierta) {
+            FXMLLoader cargador = new FXMLLoader();
+            cargador.setLocation(getClass().getResource("/ar/com/educacionit/vehiculos/ventanas/VendedoresVentana.fxml"));
+            AnchorPane dibujosVentana = (AnchorPane) cargador.load();
 
-        escenarioVendedores.setTitle("Vendedores");
-        Scene escena = new Scene(dibujosVentana);
-        escenarioVendedores.setScene(escena);
-        escenarioVendedores.show();
+            VendedoresVentanaController controller = cargador.getController();
+            controller.setRunner(this);
+
+            escenarioVendedores.setTitle("Vendedores");
+            Scene escena = new Scene(dibujosVentana);
+            escenarioVendedores.setScene(escena);
+            escenarioVendedores.show();
+            capa1Abierta = true;
+        }
     }
 
     public void abrirVentanaVendedoresEdicion() throws IOException {
-        FXMLLoader cargador = new FXMLLoader();
-        cargador.setLocation(getClass().getResource("/ar/com/educacionit/vehiculos/ventanas/VendedoresEdicion.fxml"));
-        AnchorPane dibujosVentana = (AnchorPane) cargador.load();
+        if (!capa2Abierta) {
+            FXMLLoader cargador = new FXMLLoader();
+            cargador.setLocation(getClass().getResource("/ar/com/educacionit/vehiculos/ventanas/VendedoresEdicion.fxml"));
+            AnchorPane dibujosVentana = (AnchorPane) cargador.load();
+            VendedoresEdicionController controller = cargador.getController();
+            controller.setRunner(this);
 
-        Stage escenario = new Stage();
+            Stage escenario = new Stage();
 
-        escenario.initOwner(escenarioVendedores);
-        escenario.setTitle("Ventana Vendedores Edicion");
-        Scene escena = new Scene(dibujosVentana);
-        escenario.setScene(escena);
-        escenario.show();
+            escenario.initOwner(escenarioVendedores);
+            escenario.setTitle("Ventana Vendedores Edicion");
+            Scene escena = new Scene(dibujosVentana);
+            escenario.setScene(escena);
+            escenario.show();
+            capa2Abierta = true;
+        }
     }
 
     //AUTOS
     public void abrirVentanaAutos() throws IOException {
-        FXMLLoader cargador = new FXMLLoader();
-        cargador.setLocation(getClass().getResource("/ar/com/educacionit/vehiculos/ventanas/AutosVentana.fxml"));
-        AnchorPane dibujosVentana = (AnchorPane) cargador.load();
+        if (!capa1Abierta) {
+            FXMLLoader cargador = new FXMLLoader();
+            cargador.setLocation(getClass().getResource("/ar/com/educacionit/vehiculos/ventanas/AutosVentana.fxml"));
+            AnchorPane dibujosVentana = (AnchorPane) cargador.load();
 
-        AutosVentanaController controller = cargador.getController();
-        controller.setRunner(this);
-        
-        Scene escena = new Scene(dibujosVentana);
-        escenarioAutos.setScene(escena);
-        escenarioAutos.show();
+            AutosVentanaController controller = cargador.getController();
+            controller.setRunner(this);
+
+            Scene escena = new Scene(dibujosVentana);
+            escenarioAutos.setScene(escena);
+            escenarioAutos.show();
+            capa1Abierta = true;
+        }
     }
-    
+
     public void abrirVentanaAutosEdicion() throws IOException {
-        FXMLLoader cargador = new FXMLLoader();
-        cargador.setLocation(getClass().getResource("/ar/com/educacionit/vehiculos/ventanas/AutosEdicionVentana.fxml"));
-        AnchorPane dibujosVentana = (AnchorPane) cargador.load();
+        if (!capa2Abierta) {
+            FXMLLoader cargador = new FXMLLoader();
+            cargador.setLocation(getClass().getResource("/ar/com/educacionit/vehiculos/ventanas/AutosEdicionVentana.fxml"));
+            AnchorPane dibujosVentana = (AnchorPane) cargador.load();
+            AutosEdicionVentanaController controller = cargador.getController();
+            controller.setRunner(this);
 
-        Stage escenario = new Stage();
+            Stage escenario = new Stage();
 
-        escenario.initOwner(escenarioAutos);
-        escenario.setTitle("Ventana Autos Edicion");
-        Scene escena = new Scene(dibujosVentana);
-        escenario.setScene(escena);
-        escenario.show();;
+            escenario.initOwner(escenarioAutos);
+            escenario.setTitle("Ventana Autos Edicion");
+            Scene escena = new Scene(dibujosVentana);
+            escenario.setScene(escena);
+            escenario.show();
+            capa2Abierta = true;
+        }
     }
-    
+
     //CONFIGURACION
     public void abrirVentanaConfiguracion() throws IOException {
-        FXMLLoader cargador = new FXMLLoader();
-        cargador.setLocation(getClass().getResource("/ar/com/educacionit/vehiculos/ventanas/ConfiguracionVentana.fxml"));
-        AnchorPane dibujosVentana = (AnchorPane) cargador.load();
+        if (!capa1Abierta) {
+            FXMLLoader cargador = new FXMLLoader();
+            cargador.setLocation(getClass().getResource("/ar/com/educacionit/vehiculos/ventanas/ConfiguracionVentana.fxml"));
+            AnchorPane dibujosVentana = (AnchorPane) cargador.load();
+            
+            ConfiguracionVentanaController controller = cargador.getController();
+            controller.setRunner(this);
 
-        Stage escenario = new Stage();
+            Stage escenario = new Stage();
 
-        Scene escena = new Scene(dibujosVentana);
-        escenario.setScene(escena);
-        escenario.show();
+            Scene escena = new Scene(dibujosVentana);
+            escenario.setScene(escena);
+            escenario.show();
+            capa1Abierta = true;
+        }
     }
 
     public static void main(String[] args) {
         launch(args);
+    }
+
+    public boolean isCapa1Abierta() {
+        return capa1Abierta;
+    }
+
+    public void setCapa1Abierta(boolean capa1Abierta) {
+        this.capa1Abierta = capa1Abierta;
+    }
+
+    public boolean isCapa2Abierta() {
+        return capa2Abierta;
+    }
+
+    public void setCapa2Abierta(boolean capa2Abierta) {
+        this.capa2Abierta = capa2Abierta;
     }
 
 }

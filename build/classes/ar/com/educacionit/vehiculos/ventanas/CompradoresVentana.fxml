@@ -62,7 +62,7 @@
                                 <Button fx:id="borrar" mnemonicParsing="false" prefHeight="25.0" prefWidth="66.7" text="Borrar" />
                             </children>
                         </HBox>
-                  <Separator layoutX="10.0" layoutY="203.0" prefHeight="0.0" prefWidth="400.0" />
+                        <Separator layoutX="10.0" layoutY="203.0" prefHeight="0.0" prefWidth="400.0" />
                     </children>
                 </AnchorPane>
             </items>

@@ -1,6 +1,6 @@
-
 package ar.com.educacionit.vehiculos.controladores;
 
+import ar.com.educacionit.vehiculos.App.Runner;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -9,7 +9,9 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 public class CompradoresEdicionController implements Initializable {
-    
+
+    private Runner runner;
+
     @FXML
     private Button alto;
     @FXML
@@ -22,20 +24,29 @@ public class CompradoresEdicionController implements Initializable {
     private Button equipamiento;
     @FXML
     private Button cerrar;
-   
-    private void presionarOk(){
-        
+
+    private void presionarOk() {
+
     }
+
     @FXML
-    private void presionarCerrar(){
-       
+    public void presionarCerrar() {
+        Stage escenario = (Stage) cerrar.getScene().getWindow();
+        escenario.close();
+        runner.setCapa2Abierta(false);
     }
-    
-    
-    
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
-    
+    }
+
+    public Runner getRunner() {
+        return runner;
+    }
+
+    public void setRunner(Runner runner) {
+        this.runner = runner;
+    }
+
 }

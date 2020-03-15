@@ -1,14 +1,17 @@
 package ar.com.educacionit.vehiculos.controladores;
 
+import ar.com.educacionit.vehiculos.App.Runner;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 public class ConfiguracionVentanaController implements Initializable {
 
+    private Runner runner;
     @FXML
     private TextField version;
     @FXML
@@ -34,7 +37,17 @@ public class ConfiguracionVentanaController implements Initializable {
 
     @FXML
     public void cerrarVentana() {
-     ;
+     Stage escenario = (Stage)cerrar.getScene().getWindow();
+     escenario.close();
+     runner.setCapa1Abierta(false);
+    }
+    
+    public Runner getRunner() {
+        return runner;
+    }
+
+    public void setRunner(Runner runner) {
+        this.runner = runner;
     }
 
 }
