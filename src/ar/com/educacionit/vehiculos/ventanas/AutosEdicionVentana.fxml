@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="ar.com.educacionit.vehiculos.controladores.AutosEdicionVentanaController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ar.com.educacionit.vehiculos.controladores.AutosEdicionVentanaController">
    <children>
       <GridPane layoutX="20.0" layoutY="10.0" prefHeight="256.0" prefWidth="580.0">
         <columnConstraints>
@@ -37,22 +37,22 @@
             <Label text="Precio" GridPane.rowIndex="6" />
             <AnchorPane GridPane.columnIndex="1">
                <children>
-                  <TextField layoutX="2.0" layoutY="6.0" prefHeight="25.0" prefWidth="309.0" />
+                  <TextField fx:id="alto" layoutX="2.0" layoutY="6.0" prefHeight="25.0" prefWidth="309.0" />
                </children>
             </AnchorPane>
             <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="1">
                <children>
-                  <TextField layoutY="6.0" prefHeight="25.0" prefWidth="309.0" />
+                  <TextField fx:id="largo" layoutY="6.0" prefHeight="25.0" prefWidth="309.0" />
                </children>
             </AnchorPane>
             <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="2">
                <children>
-                  <TextField layoutY="11.0" prefHeight="25.0" prefWidth="309.0" />
+                  <TextField fx:id="ancho" layoutY="11.0" prefHeight="25.0" prefWidth="309.0" />
                </children>
             </AnchorPane>
             <AnchorPane GridPane.columnIndex="1" GridPane.rowIndex="6">
                <children>
-                  <TextField layoutY="6.0" prefHeight="25.0" prefWidth="309.0" />
+                  <TextField fx:id="precio" layoutY="6.0" prefHeight="25.0" prefWidth="309.0" />
                </children>
             </AnchorPane>
             <ChoiceBox prefHeight="25.0" prefWidth="168.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
@@ -68,7 +68,7 @@
         <buttons>
             <AnchorPane>
                <children>
-                <Button layoutX="-11.0" layoutY="8.0" minWidth="64.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" text="OK" />
+                <Button layoutX="-11.0" layoutY="8.0" minWidth="64.0" mnemonicParsing="false" onAction="#presionarOk" prefHeight="25.0" prefWidth="81.0" text="OK" />
                </children>
             </AnchorPane>
             <AnchorPane>
