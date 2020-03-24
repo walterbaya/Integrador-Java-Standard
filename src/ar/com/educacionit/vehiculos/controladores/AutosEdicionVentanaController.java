@@ -30,10 +30,6 @@ public class AutosEdicionVentanaController implements Initializable {
     @FXML
     private TextArea equipamiento;
 
-    /*
-si las 4 cajas de texto están completas, deberá aparecer una caja de diálogo con la leyenda: "Está a
-punto de guardar los datos, desea continuar?" y las opciones “aceptar” y “cancelar”, si cancela vuelve a
-la ventana de edición, si acepta se cierra la ventana de edición.*/
     private void errorPorVacio(String nombreTextField) {
         Alert alerta = new Alert(Alert.AlertType.WARNING);
         alerta.setTitle("Dialogo de error");
@@ -66,10 +62,10 @@ la ventana de edición, si acepta se cierra la ventana de edición.*/
         } else if (ancho.getText().length() == 0) {
             errorPorVacio("ancho");
             ancho.requestFocus();
-        } /*else if (equipamiento.getText().length() == 0) {
+        } else if (equipamiento.getText().length() == 0) {
             errorPorVacio("equipamiento");
             equipamiento.requestFocus();
-        }*/ else {
+        } else {
             confirmacion();
         }
     }
