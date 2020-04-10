@@ -29,7 +29,6 @@ public abstract class Controller {
     public void cerrarVentanas(Runner runner, Button cerrar) {
         Stage escenario = (Stage) cerrar.getScene().getWindow();
         escenario.close();
-        runner.setCapa2Abierta(false);
     }
 
     public void confirmacion(Runner runner, Button cerrar) {

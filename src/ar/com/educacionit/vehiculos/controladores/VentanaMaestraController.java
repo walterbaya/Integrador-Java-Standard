@@ -14,9 +14,7 @@ public class VentanaMaestraController implements Initializable {
 
     @FXML
     public void cerrarVentana() throws Exception {
-        if (!(runner.isCapa1Abierta() || runner.isCapa2Abierta())) {
             Platform.exit();
-        }
     }
 
     @FXML

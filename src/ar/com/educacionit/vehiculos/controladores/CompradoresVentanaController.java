@@ -27,7 +27,6 @@ public class CompradoresVentanaController implements Initializable {
     public void cerrarVentana() {
         Stage escenario = (Stage)cerrar.getScene().getWindow();
         escenario.close();
-        runner.setCapa1Abierta(false);
     }
 
     @FXML

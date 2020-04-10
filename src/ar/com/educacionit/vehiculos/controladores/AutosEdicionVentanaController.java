@@ -74,7 +74,6 @@ public class AutosEdicionVentanaController implements Initializable {
     private void cerrarVentana() {
         Stage escenario = (Stage) cerrar.getScene().getWindow();
         escenario.close();
-        runner.setCapa2Abierta(false);
     }
 
     @Override
