@@ -9,9 +9,22 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-public abstract class Controller {
+public abstract class EditionController {
+    
+    public void errorPorNoEnteroAlert(String nombreTextField) {
+        Alert alerta = new Alert(Alert.AlertType.WARNING);
+        alerta.setTitle("Dialogo de error");
+        alerta.setContentText("El " + nombreTextField + " debe ser un int");
+        alerta.showAndWait();
+    }
+     public void errorPorNoDecimalAlert(String nombreTextField) {
+        Alert alerta = new Alert(Alert.AlertType.WARNING);
+        alerta.setTitle("Dialogo de error");
+        alerta.setContentText("El " + nombreTextField + " debe ser un decimal");
+        alerta.showAndWait();
+    }
 
-    public void errorPorVacio(String nombreTextField) {
+    public void errorPorVacioAlert(String nombreTextField) {
         Alert alerta = new Alert(Alert.AlertType.WARNING);
         alerta.setTitle("Dialogo de error");
         alerta.setHeaderText("Alguna caja esta vacia");
@@ -19,13 +32,8 @@ public abstract class Controller {
         alerta.showAndWait();
     }
 
-    public void errorPorNoEnteroAlert(String nombreTextField) {
-        Alert alerta = new Alert(Alert.AlertType.WARNING);
-        alerta.setTitle("Dialogo de error");
-        alerta.setContentText("El " + nombreTextField + " debe ser un int");
-        alerta.showAndWait();
-    }
-
+    
+  
     public void cerrarVentanas(Runner runner, Button cerrar) {
         Stage escenario = (Stage) cerrar.getScene().getWindow();
         escenario.close();
@@ -48,21 +56,21 @@ public abstract class Controller {
         boolean error = false;
         try {
             valorAlto = Integer.parseInt(alto.getText());
-        } catch (Exception e) {
+        } catch (NumberFormatException e) {
             System.out.println("Error el alto no es un entero");
             errorPorNoEnteroAlert("alto");
             error = true;
         }
         try {
             valorAncho = Integer.parseInt(ancho.getText());
-        } catch (Exception e) {
+        } catch (NumberFormatException e) {
             System.out.println("Error el ancho no es un entero");
             errorPorNoEnteroAlert("ancho");
             error = true;
         }
         try {
             valorLargo = Integer.parseInt(largo.getText());
-        } catch (Exception e) {
+        } catch (NumberFormatException e) {
             System.out.println("Error el largo no es un entero");
             errorPorNoEnteroAlert("largo");
             error = true;
@@ -75,9 +83,9 @@ public abstract class Controller {
         boolean error = false;
         try {
             p = Double.parseDouble(precio.getText());
-        } catch (Exception e) {
-            System.out.println("Error el ");
-            errorPorNoEnteroAlert(alto.getText());
+        } catch (NumberFormatException e) {
+            System.out.println("Error el precio debe ser un numero con coma.");
+            errorPorNoDecimalAlert("precio");
             error = true;
         }
         return error;
