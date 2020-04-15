@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane id="AnchorPane" prefHeight="651.0" prefWidth="626.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProyectoDosVentanas.Controladores.VentanaComputacionController">
+   <children>
+      <GridPane layoutX="24.0" layoutY="9.0" prefHeight="532.0" prefWidth="563.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="363.0" minWidth="10.0" prefWidth="322.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="336.0" minWidth="0.0" prefWidth="185.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="234.0" minWidth="0.0" prefWidth="52.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <BorderPane GridPane.rowIndex="12">
+               <left>
+                  <CheckBox fx:id="AlgoritmosIC" mnemonicParsing="false" prefHeight="17.0" prefWidth="226.0" text="Algoritmos y estructuras de datos I" BorderPane.alignment="CENTER" />
+               </left>
+            </BorderPane>
+            <CheckBox fx:id="ProbabilidadYEstadisticaC" layoutX="10.0" layoutY="42.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="198.0" text="Probabilidad y estadistica" GridPane.rowIndex="13" />
+            <BorderPane GridPane.rowIndex="14">
+               <left>
+                  <CheckBox fx:id="AlgoritmosIIC" mnemonicParsing="false" prefHeight="17.0" prefWidth="236.0" text="Algoritmos y estructuras de datos II" BorderPane.alignment="CENTER" />
+               </left>
+            </BorderPane>
+            <CheckBox fx:id="OrganizacionIC" layoutX="10.0" layoutY="123.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="198.0" text="Organización del Computador I " GridPane.rowIndex="17" />
+            <CheckBox fx:id="MetodosNumericosC" layoutX="10.0" layoutY="123.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="198.0" text="Metodos Numericos" GridPane.rowIndex="16" />
+            <BorderPane GridPane.rowIndex="15">
+               <left>
+                  <CheckBox fx:id="AlgoritmosIIIC" mnemonicParsing="false" prefHeight="17.0" prefWidth="259.0" text="Algoritmos y estructuras de datos III" BorderPane.alignment="CENTER" />
+               </left>
+            </BorderPane>
+            <CheckBox fx:id="OrganizacionIIC" layoutX="10.0" layoutY="177.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="198.0" text="Organización del Computador II" GridPane.rowIndex="18" />
+            <CheckBox fx:id="SistemasOperativosC" layoutX="10.0" layoutY="231.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="198.0" text="Sistemas Operativos" GridPane.rowIndex="19" />
+            <CheckBox fx:id="LogicaYComputabilidadC" layoutX="10.0" layoutY="258.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="198.0" text="Lógica y Computabilidad" GridPane.rowIndex="20" />
+            <CheckBox fx:id="IngenieriaIC" layoutX="10.0" layoutY="285.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="198.0" text="Ingeniería de Software I" GridPane.rowIndex="22" />
+            <BorderPane GridPane.rowIndex="21">
+               <left>
+                  <CheckBox fx:id="TeoriaComunicacionesC" mnemonicParsing="false" prefHeight="17.0" prefWidth="242.0" text="Teoría de las Comunicaciones / Redes" BorderPane.alignment="CENTER" />
+               </left>
+            </BorderPane>
+            <CheckBox fx:id="TeoriaDeLenguajesC" layoutX="10.0" layoutY="339.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="198.0" text="Teoría de Lenguajes" GridPane.rowIndex="24" />
+            <CheckBox fx:id="BaseDeDatosC" layoutX="10.0" layoutY="339.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="198.0" text="Bases de Datos " GridPane.rowIndex="23" />
+            <CheckBox fx:id="IngenieriaIIC" layoutX="10.0" layoutY="394.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="198.0" text="Ingeniería de Software II" GridPane.rowIndex="26" />
+            <CheckBox fx:id="ParadigmaDeLenguajesC" layoutX="10.0" layoutY="394.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="198.0" text="Paradigmas de Programación" GridPane.rowIndex="25" />
+            <TextField fx:id="AlgebraIN" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <TextField fx:id="AlgoritmosIN" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            <TextField fx:id="ProbabilidadYEstadisticaN" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <TextField fx:id="AlgoritmosIIN" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <TextField fx:id="AlgoritmosIIIN" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+            <TextField fx:id="MetodosNumericosN" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+            <TextField fx:id="OrganizacionIN" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+            <TextField fx:id="OrganizacionIIN" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+            <TextField fx:id="SistemasOperativosN" GridPane.columnIndex="1" GridPane.rowIndex="19" />
+            <TextField fx:id="LogicaYComputabilidadN" GridPane.columnIndex="1" GridPane.rowIndex="20" />
+            <TextField fx:id="TeoriaComunicacionesN" GridPane.columnIndex="1" GridPane.rowIndex="21" />
+            <TextField fx:id="IngenieriaIN" GridPane.columnIndex="1" GridPane.rowIndex="22" />
+            <TextField fx:id="BaseDeDatosN" GridPane.columnIndex="1" GridPane.rowIndex="23" />
+            <TextField fx:id="TeoriaDeLenguajesN" GridPane.columnIndex="1" GridPane.rowIndex="24" />
+            <TextField fx:id="ParadigmaDeLenguajesN" GridPane.columnIndex="1" GridPane.rowIndex="25" />
+            <TextField fx:id="IngenieriaIIN" GridPane.columnIndex="1" GridPane.rowIndex="26" />
+            <BorderPane GridPane.columnIndex="2" GridPane.rowIndex="11">
+               <center>
+                  <CheckBox fx:id="AlgebraIF" mnemonicParsing="false" onAction="#setAlgebraIN" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <BorderPane GridPane.columnIndex="2" GridPane.rowIndex="12">
+               <center>
+                  <CheckBox fx:id="AlgoritmosIF" mnemonicParsing="false" onAction="#setAlgoritmosIN" />
+               </center>
+            </BorderPane>
+            <BorderPane GridPane.columnIndex="2" GridPane.rowIndex="13">
+               <center>
+                  <CheckBox fx:id="ProbabilidadYEstadisticaF" mnemonicParsing="false" onAction="#setProbabilidadYEstadisticaN" />
+               </center>
+            </BorderPane>
+            <BorderPane GridPane.columnIndex="2" GridPane.rowIndex="14">
+               <center>
+                  <CheckBox fx:id="AlgoritmosIIF" mnemonicParsing="false" onAction="#setAlgoritmosIIN" />
+               </center>
+            </BorderPane>
+            <BorderPane GridPane.columnIndex="2" GridPane.rowIndex="15">
+               <center>
+                  <BorderPane>
+                     <center>
+                        <CheckBox fx:id="AlgoritmosIIIF" mnemonicParsing="false" onAction="#setAlgoritmosIIIN" />
+                     </center>
+                  </BorderPane>
+               </center>
+            </BorderPane>
+            <BorderPane GridPane.columnIndex="2" GridPane.rowIndex="16">
+               <center>
+                  <CheckBox fx:id="MetodosNumericosF" mnemonicParsing="false" onAction="#setMetodosNumericosN" />
+               </center>
+            </BorderPane>
+            <BorderPane GridPane.columnIndex="2" GridPane.rowIndex="17">
+               <center>
+                  <CheckBox fx:id="OrganizacionIF" mnemonicParsing="false" onAction="#setOrganizacionIN" />
+               </center>
+            </BorderPane>
+            <BorderPane GridPane.columnIndex="2" GridPane.rowIndex="18">
+               <center>
+                  <CheckBox fx:id="OrganizacionIIF" mnemonicParsing="false" onAction="#setOrganizacionIIN" />
+               </center>
+            </BorderPane>
+            <BorderPane GridPane.columnIndex="2" GridPane.rowIndex="19">
+               <center>
+                  <CheckBox fx:id="SistemasOperativosF" mnemonicParsing="false" onAction="#setSistemasOperativosN" />
+               </center>
+            </BorderPane>
+            <BorderPane GridPane.columnIndex="2" GridPane.rowIndex="20">
+               <center>
+                  <CheckBox fx:id="LogicaYComputabilidadF" mnemonicParsing="false" onAction="#setLogicaYComputabilidadN" />
+               </center>
+            </BorderPane>
+            <BorderPane GridPane.columnIndex="2" GridPane.rowIndex="21">
+               <center>
+                  <CheckBox fx:id="TeoriaComunicacionesF" mnemonicParsing="false" onAction="#setTeoriaComunicacionesN" />
+               </center>
+            </BorderPane>
+            <BorderPane GridPane.columnIndex="2" GridPane.rowIndex="22">
+               <center>
+                  <CheckBox fx:id="IngenieriaIF" mnemonicParsing="false" onAction="#setIngenieriaIN" />
+               </center>
+            </BorderPane>
+            <BorderPane GridPane.columnIndex="2" GridPane.rowIndex="23">
+               <center>
+                  <CheckBox fx:id="BaseDeDatosF" mnemonicParsing="false" onAction="#setBaseDeDatosN" />
+               </center>
+            </BorderPane>
+            <BorderPane GridPane.columnIndex="2" GridPane.rowIndex="24">
+               <center>
+                  <CheckBox fx:id="TeoriaDeLenguajesF" mnemonicParsing="false" onAction="#setTeoriaDeLenguajesN" />
+               </center>
+            </BorderPane>
+            <BorderPane GridPane.columnIndex="2" GridPane.rowIndex="25">
+               <center>
+                  <CheckBox fx:id="ParadigmaDeLenguajesF" mnemonicParsing="false" onAction="#setParadigmaDeLenguajesN" />
+               </center>
+            </BorderPane>
+            <BorderPane GridPane.columnIndex="2" GridPane.rowIndex="26">
+               <center>
+                  <CheckBox fx:id="IngenieriaIIF" mnemonicParsing="false" onAction="#setIngenieriaIIN" />
+               </center>
+            </BorderPane>
+            <BorderPane GridPane.rowIndex="5">
+               <left>
+                  <CheckBox mnemonicParsing="false" prefHeight="17.0" prefWidth="329.0" text="Introducción al conocimiento de la sociedad y el estado" BorderPane.alignment="CENTER" />
+               </left>
+            </BorderPane>
+            <BorderPane GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <top>
+                  <TextField BorderPane.alignment="CENTER" />
+               </top>
+            </BorderPane>
+            <BorderPane GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <center>
+                  <CheckBox mnemonicParsing="false" BorderPane.alignment="CENTER" />
+               </center>
+            </BorderPane>
+            <CheckBox fx:id="AlgebraIC" layoutX="210.0" layoutY="15.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="198.0" text="Algebra I" GridPane.rowIndex="11" />
+            <AnchorPane GridPane.rowIndex="2">
+               <children>
+                  <CheckBox layoutY="2.0" mnemonicParsing="false" text="Analisis Matematico " />
+               </children>
+            </AnchorPane>
+            <CheckBox mnemonicParsing="false" text="Física" GridPane.rowIndex="7" />
+            <CheckBox mnemonicParsing="false" text="Introducción al pensamiento científico" GridPane.rowIndex="4" />
+            <CheckBox mnemonicParsing="false" text="Algebra" GridPane.rowIndex="3" />
+            <AnchorPane GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <children>
+                  <CheckBox layoutX="19.0" layoutY="2.0" mnemonicParsing="false" />
+               </children>
+            </AnchorPane>
+            <CheckBox mnemonicParsing="false" text="Química" GridPane.rowIndex="8" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <TextField prefHeight="11.0" prefWidth="186.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField prefWidth="84.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <AnchorPane>
+               <children>
+                  <Label layoutX="60.0" layoutY="1.0" text="Nombre Materia" />
+               </children>
+            </AnchorPane>
+            <AnchorPane GridPane.columnIndex="1">
+               <children>
+                  <Label layoutX="23.0" layoutY="1.0" text="Nota de Final" />
+               </children>
+            </AnchorPane>
+            <AnchorPane GridPane.columnIndex="2">
+               <children>
+                  <Label layoutX="12.0" layoutY="1.0" prefHeight="17.0" prefWidth="30.0" text="Final" />
+               </children>
+            </AnchorPane>
+            <AnchorPane GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <children>
+                  <CheckBox layoutX="19.0" layoutY="1.0" mnemonicParsing="false" />
+               </children>
+            </AnchorPane>
+            <AnchorPane GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <children>
+                  <CheckBox layoutX="19.0" layoutY="1.0" mnemonicParsing="false" />
+               </children>
+            </AnchorPane>
+            <AnchorPane GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <children>
+                  <CheckBox layoutX="19.0" layoutY="1.0" mnemonicParsing="false" />
+               </children>
+            </AnchorPane>
+            <AnchorPane GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <CheckBox layoutX="19.0" layoutY="2.0" mnemonicParsing="false" />
+               </children>
+            </AnchorPane>
+            <AnchorPane GridPane.rowIndex="1">
+               <children>
+                  <Label layoutX="136.0" layoutY="2.0" prefHeight="17.0" prefWidth="275.0" text="CICLO BASICO COMUN" />
+               </children>
+            </AnchorPane>
+            <CheckBox fx:id="AnalisisIIC" mnemonicParsing="false" text="Análisis II" GridPane.rowIndex="10" />
+            <AnchorPane GridPane.rowIndex="9">
+               <children>
+                  <Label layoutX="153.0" layoutY="2.0" text="CICLO DE GRADO" />
+               </children>
+            </AnchorPane>
+            <AnchorPane GridPane.columnIndex="2" GridPane.rowIndex="10">
+               <children>
+                  <CheckBox fx:id="AnalisisIIF" layoutX="19.0" layoutY="2.0" mnemonicParsing="false" onAction="#setAnalisisIIN" />
+               </children>
+            </AnchorPane>
+            <TextField fx:id="AnalisisIIN" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+         </children>
+      </GridPane>
+      <TextField fx:id="PromedioSinCBCF" layoutX="184.0" layoutY="598.0" prefHeight="25.0" prefWidth="123.0" />
+      <Button fx:id="PromedioSinCBC" layoutX="24.0" layoutY="598.0" mnemonicParsing="false" onAction="#setPromedioSinCbc" prefHeight="25.0" prefWidth="146.0" text="Promedio" />
+      <Button fx:id="PromedioConCBC" layoutX="324.0" layoutY="598.0" mnemonicParsing="false" text="Promedio con CBC" />
+      <TextField fx:id="PromedioConCBCF" layoutX="453.0" layoutY="598.0" prefHeight="25.0" prefWidth="116.0" />
+      <Button fx:id="cargarOptativas" layoutX="24.0" layoutY="561.0" mnemonicParsing="false" onAction="#AbrirVentanaOptativasComputacion" prefHeight="25.0" prefWidth="146.0" text="Cargar Optativas" />
+      <Button fx:id="NumeroAplazos" layoutX="184.0" layoutY="561.0" mnemonicParsing="false" onAction="#AbrirVentanaAplazosComputacion" prefHeight="25.0" prefWidth="123.0" text="Ingresar Aplazos" />
+   </children>
+</AnchorPane>

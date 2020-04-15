@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="educacionit.javafx.tutorial02.FXMLDocumentController">
+   <children>
+      <GridPane prefHeight="202.0" prefWidth="321.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button fx:id="btn_information" layoutX="71.0" layoutY="52.0" mnemonicParsing="false" onAction="#btn_information_pressed" prefWidth="150.0" text="INFORMATION" />
+            <Button fx:id="btn_warning" layoutX="71.0" layoutY="77.0" mnemonicParsing="false" onAction="#btn_warning_pressed" prefWidth="150.0" text="WARNING" GridPane.rowIndex="1" />
+            <Button fx:id="btn_information_2" layoutX="123.0" layoutY="52.0" mnemonicParsing="false" onAction="#btn_information_2_pressed" prefWidth="150.0" text="INFORMATION 2" GridPane.columnIndex="1" />
+            <Button fx:id="btn_exception" layoutX="71.0" layoutY="102.0" mnemonicParsing="false" onAction="#btn_exception_pressed" prefWidth="150.0" text="EXCEPTION" GridPane.rowIndex="2" />
+            <Button fx:id="btn_confirmation" layoutX="123.0" layoutY="102.0" mnemonicParsing="false" onAction="#btn_confirmation_pressed" prefWidth="150.0" text="CONFIRMATION" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btn_error" mnemonicParsing="false" onAction="#btn_error_pressed" prefWidth="150.0" text="ERROR" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btn_input" mnemonicParsing="false" onAction="#btn_input_pressed" prefWidth="150.0" text="INPUT" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="btn_confirmaion_2" mnemonicParsing="false" onAction="#btn_confirmation_2_pressed" prefWidth="150.0" text="CONFIRMATION 2" GridPane.rowIndex="3" />
+            <Button fx:id="btn_choice" mnemonicParsing="false" onAction="#btn_choice_pressed" prefWidth="150.0" text="CHOICE" GridPane.rowIndex="4" />
+            <Button fx:id="btn_login" mnemonicParsing="false" onAction="#btn_login_pressed" prefWidth="150.0" text="LOGIN" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
